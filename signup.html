@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="assets/css/login-form-1.css">
     <link rel="stylesheet" href="assets/css/login-form.css">
@@ -52,21 +53,21 @@
                         <h1>Sign-up now!</h1>
                         <div class="form-group">
                             <div class="col-sm-4 label-column"><label class="control-label" for="name-input-field">Name </label></div>
-                            <div class="col-sm-6 input-column"><input class="form-control input-sm" type="text" name="Name" placeholder="FirstName LastName"></div>
+                            <div class="col-sm-6 input-column"><input class="form-control input-sm" type="text" name="Name" placeholder="FirstName LastName" required=""></div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-4 label-column"><label class="control-label" for="email-input-field">Email (must be AUI's email)</label></div>
-                            <div class="col-sm-6 input-column"><input class="form-control input-sm" type="email" placeholder="XXX@aui.ma" name="email"></div>
+                            <div class="col-sm-6 input-column"><input class="form-control input-sm" type="email" placeholder="XXX@aui.ma" name="email" inputmode="email" pattern="[a-zA-Z]\.[a-zA-Z]+@aui\.ma" minlength="10" maxlength="20" required=""></div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-4 label-column"><label class="control-label" for="pawssword-input-field">Password </label></div>
-                            <div class="col-sm-6 input-column"><input class="form-control" type="password" name="Password"></div>
+                            <div class="col-sm-6 input-column"><input class="form-control" type="password" name="Password" required=""></div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-4 label-column"><label class="control-label" for="repeat-pawssword-input-field">Repeat Password </label></div>
-                            <div class="col-sm-6 input-column"><input class="form-control" type="password" name="Confirm_Password"></div>
+                            <div class="col-sm-6 input-column"><input class="form-control" type="password" name="Confirm_Password" required=""></div>
                         </div>
-                        <div class="checkbox"><label><input type="checkbox">I've read and accept the terms and conditions</label></div><button class="btn btn-default submit-button" type="button">Sign me up</button>
+                        <div class="checkbox"><label><input type="checkbox">I've read and accept the terms and conditions</label></div><a class="btn btn-default submit-button" role="button">Sign me up</a>
                     </form>
                 </div>
             </div>
